@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zvirti Jewelry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+        }
+      
+        /* Optional: Make video fade in smoothly */
+        video {
+          animation: fadeIn 1s ease-in-out;
+        }
+      
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+      </style>
+      
+<!-- Header -->
+<header class="bg-[#hexcode] text-white fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center">
+    <!-- Logo + Brand Name -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="images/logo.png" alt="Zvirti Logo" class="h-10 shadow-md">
+    </a>
+  
+    <!-- Navigation -->
+    <nav class="flex space-x-4">
+      <a href="index.html" class="px-4 py-2 rounded hover:bg-white hover:text-black transition font-medium">Home</a>
+      <a href="products.html" class="px-4 py-2 rounded hover:bg-white hover:text-black transition font-medium">Products</a>
+    </nav>
+  </header>
+  
+  
+
+  <!-- Hero Section -->
+<!-- Hero Section with Background Image -->
+<!-- Hero Section with Background Image -->
+<!-- Hero Section with Background Video -->
+<section class="relative h-screen w-full overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+      <source src="videos/background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center text-white p-6 z-10">
+      <h2 class="text-4xl font-bold mb-4">Zvirti Jewelry</h2>
+      <p class="mb-6 text-lg">Silver pieces infused with nature’s story</p>
+      <a href="products.html" class="bg-white text-gray-800 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">Explore Collection</a>
+    </div>
+  </section>
+  
+  
+  
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 p-4 mt-10">
+    &copy; 2025 Zvirti. All rights reserved.
+  </footer>
+
+</body>
+</html>
