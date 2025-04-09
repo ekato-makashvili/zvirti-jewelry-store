@@ -1,0 +1,33 @@
+{
+  "name": "zvirti-store",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000z\u0000v\u0000i\u0000r\u0000t\u0000i\u0000-\u0000j\u0000e\u0000w\u0000e\u0000l\u0000r\u0000y\u0000-\u0000s\u0000t\u0000o\u0000r\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+
+  "scripts": {
+  "dev": "vite",
+  "start": "react-scripts start",
+  "build": "vite build",
+  "test": "react-scripts test"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekato-makashvili/zvirti-jewelry-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ekato-makashvili/zvirti-jewelry-store/issues"
+  },
+  "homepage": "https://github.com/ekato-makashvili/zvirti-jewelry-store#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.5"
+  }
+}
