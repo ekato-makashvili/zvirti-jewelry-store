@@ -60,18 +60,17 @@
         <h2 class="text-3xl font-semibold text-center mb-6">
           {{ texts.productsTitle }}
         </h2>
-        <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           <div
             v-for="(prod, i) in products"
             :key="i"
-            class="relative bg-white/20 rounded-2xl shadow-lg overflow-hidden aspect-[6/5] hover:scale-105 hover:-rotate-1 transition-all duration-300"
+            class="relative w-52 h-52 max-w-sm overflow-hidden shadow-lg"
             :style="{ transitionDelay: `${150}ms`}"
           >
-            <img :src="prod.img" :alt="prod.title" class="w-full" />
-            <div class="text-center">
-              <h3 class="text-xl font-bold mb-2">{{ prod.title }}</h3>
+            <img :src="prod.img" :alt="prod.title" class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 flex flex-col justify-end items-end text-white bg-black/30 px-4 pb-4">
               <button
-                class="bg-white text-cyan-800 font-semibold px-4 py-2 rounded-xl hover:bg-cyan-100 hover:scale-110 transition-transform duration-300"
+                class="bg-white text-cyan-800 font-semibold px-4 py-1.5 rounded-xl hover:bg-cyan-100 hover:scale-110 transition-transform duration-300"
               >
                 {{ texts.buy }}
               </button>
@@ -184,32 +183,32 @@ const toggleLanguage = () =>
 /* products */
 const products = computed(() => [
   {
-    img: "https://source.unsplash.com/400x250/?website",
+    img: "prod1.JPG",
     title: texts.value.prod1,
   },
-  { img: "https://source.unsplash.com/400x250/?app", title: texts.value.prod2 },
+  { img: "prod2.JPG", title: texts.value.prod2 },
   {
-    img: "https://source.unsplash.com/400x250/?technology",
+    img: "prod3.jpg",
     title: texts.value.prod3,
   },
     {
-    img: "https://source.unsplash.com/400x250/?technology",
+    img: "prod4.JPG",
     title: texts.value.prod4,
   },
     {
-    img: "https://source.unsplash.com/400x250/?technology",
+    img: "prod5.jpg",
     title: texts.value.prod5,
   },
     {
-    img: "https://source.unsplash.com/400x250/?technology",
+    img: "prod6.jpg",
     title: texts.value.prod6,
   },
     {
-    img: "https://source.unsplash.com/400x250/?technology",
+    img: "prod7.JPG",
     title: texts.value.prod7,
   },
     {
-    img: "https://source.unsplash.com/400x250/?technology",
+    img: "prod8.jpg",
     title: texts.value.prod8,
   },
 ]);
